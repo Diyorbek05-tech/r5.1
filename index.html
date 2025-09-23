@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecobazar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="p-4">
+    <nav class="hidden md:block md:flex justify-between items-center p-4">
+      <div class="flex space-x-2">
+        <div><img src="./assets/mapnav.png" alt="mapnav" /></div>
+        <a class="text-[#666666] text-[12px]" href="#"
+          >Store Location: Lincoln- 344, Illinois, Chicago, USA</a
+        >
+      </div>
+      <div class="flex gap-5">
+        <a class="text-[#666666] text-[12px]" href="#">Eng ∨</a>
+        <a class="text-[#666666] text-[12px]" href="#">USD ∨</a>
+        <div class="text-[#666666] text-[12px]">|</div>
+        <a class="text-[#666666] text-[12px]" href="#">Sign In / Sign Up</a>
+      </div>
+    </nav>
+    <hr />
+
+    <!-- desktop header -->
+    <header class="hidden md:block md:flex justify-between p-4">
+      <div><img src="./assets/Logo.png" alt="logo" /></div>
+      <div
+        class="flex items-center justify-between border rounded-lg px-4 py-2 w-full max-w-md bg-white shadow-sm"
+      >
+        <div class="flex items-center gap-2 text-gray-400">
+          <img src="./assets/search.png" alt="" />
+          <span class="text-[15px] text-[#808080]">Search</span>
+        </div>
+        <button
+          class="bg-green-500 hover:bg-green-600 text-white text-sm font-medium px-5 py-3 rounded-lg"
+        >
+          Search
+        </button>
+      </div>
+      <div class="flex gap-4 items-center">
+        <img src="./assets/Heart.png" alt="" />
+        <div class="opacity-[50%]">|</div>
+        <img src="./assets/Cart.png" alt="" />
+        <div>
+          <p class="text-[#4D4D4D] text-[11px]">Shopping cart:</p>
+          <h4 class="text-[#1A1A1A] text-[14px]">$57.00</h4>
+        </div>
+      </div>
+    </header>
+
+    <!-- desktop -->
+    <nav class="px-4 bg-[#333333] hidden md:block md:flex justify-between">
+      <div class="flex items-center space-x-8">
+        <a class="text-[#999999] mb-4 hover:text-white" href="#">Home ▿</a>
+        <a class="text-[#999999] mb-4 hover:text-white" href="#">Shop ▿</a>
+        <a class="text-[#999999] mb-4 hover:text-white" href="#">Pages ▿</a>
+        <a class="text-[#999999] mb-4 hover:text-white" href="#">Blog ▿</a>
+        <a class="text-[#999999] mb-4 hover:text-white" href="#">About us ▿</a>
+        <a class="text-[#999999] mb-4 hover:text-white" href="#"
+          >Contact us ▿</a
+        >
+      </div>
+      <h3
+        class="flex my-4 gap-4 text-white hover:text-green-500 cursor-pointer"
+      >
+        <img src="./assets/PhoneCall.png" alt="" /> (219) 555-0114
+      </h3>
+    </nav>
+    <!-- mobile header -->
+    <header class="p-2 md:hidden bg-[#333333] flex flex-col items-center">
+      <div class="my-4"><img src="./assets/Logo.png" alt="" /></div>
+      <a class="text-[#999999] mb-4 hover:text-white" href="#">Home ▿</a>
+      <a class="text-[#999999] mb-4 hover:text-white" href="#">Shop ▿</a>
+      <a class="text-[#999999] mb-4 hover:text-white" href="#">Pages ▿</a>
+      <a class="text-[#999999] mb-4 hover:text-white" href="#">Blog ▿</a>
+      <a class="text-[#999999] mb-4 hover:text-white" href="#">About us ▿</a>
+      <a class="text-[#999999] mb-4 hover:text-white" href="#">Contact us ▿</a>
+      <h3
+        class="flex my-4 gap-4 text-white hover:text-green-500 cursor-pointer"
+      >
+        <img src="./assets/PhoneCall.png" alt="" /> (219) 555-0114
+      </h3>
+    </header>
+
+    <main class="grid grid-cols-1 md:grid-cols-3 md:p-6 gap-x-8">
+      <div
+        class="bg-[url('./assets/mainbg1.jpg')] bg-center bg-no-repeat bg-cover rounded-xl px-10 py-20 flex flex-col justify-center max-h-[600px]"
+      >
+        <h1
+          class="max-w-md mb-7 text-white font-semibold text-[48px] leading-tight"
+        >
+          Fresh & Healthy Organic Food
+        </h1>
+        <h4 class="text-white mb-6 text-[20px]">
+          Sale up to <span class="bg-[#FF8A00] p-1 rounded-l">30 % OFF</span>
+        </h4>
+        <p class="text-white text-[14px] mb-7 opacity-80">
+          Free shipping on all your order.
+        </p>
+        <button
+          class="text-[#00B207] hover:bg-orange-200 py-4 px-10 rounded-full text-[16px] bg-white"
+        >
+          Shop now →
+        </button>
+      </div>
+
+      <div class="flex flex-col gap-6">
+        <div
+          class="bg-[url('./assets/mainbg2.png')] rounded-xl bg-no-repeat bg-cover py-12 px-8"
+        >
+          <h3 class="text-[#1A1A1A] text-[14px] mb-2">Summer Sale</h3>
+          <h2 class="text-[#1A1A1A] text-[32px] font-semibold mb-3">75% OFF</h2>
+          <h3 class="text-[#666666] text-[14px] mb-6">
+            Only Fruit & Vegetable
+          </h3>
+          <a class="text-[#00B207] text-[16px] hover:text-green-700" href="#"
+            >Shop Now →</a
+          >
+        </div>
+
+        <div
+          class="bg-[url('./assets/mainbg3.png')] bg-no-repeat bg-cover rounded-xl flex flex-col justify-center items-center px-10 py-12"
+        >
+          <h4 class="uppercase text-white text-[14px] mb-3">Best Deal</h4>
+          <h2
+            class="text-white text-center uppercase font-semibold max-w-[343px] text-[32px] mb-8"
+          >
+            Special Products Deal of the Month
+          </h2>
+          <a class="text-[#00B207] text-[16px] hover:text-green-400" href="#"
+            >Shop Now →</a
+          >
+        </div>
+      </div>
+    </main>
+
+    <section class="p-10 grid grid-cols-1 mb-14 gap-14 md:grid-cols-4">
+      <div class="flex gap-4 items-center">
+        <div><img src="./assets/headphones.png" alt="" /></div>
+        <div>
+          <h3 class="text-[#1A1A1A] text-[16px] mb-2">Customer Support 24/7</h3>
+          <p class="text-[#999999] text-[14px]">Instant access to Support</p>
+        </div>
+      </div>
+      <div class="flex gap-4 items-center">
+        <div><img src="./assets/headphones.png" alt="" /></div>
+        <div>
+          <h3 class="text-[#1A1A1A] text-[16px] mb-2">Customer Support 24/7</h3>
+          <p class="text-[#999999] text-[14px]">Instant access to Support</p>
+        </div>
+      </div>
+      <div class="flex gap-4 items-center">
+        <div><img src="./assets/headphones.png" alt="" /></div>
+        <div>
+          <h3 class="text-[#1A1A1A] text-[16px] mb-2">Customer Support 24/7</h3>
+          <p class="text-[#999999] text-[14px]">Instant access to Support</p>
+        </div>
+      </div>
+      <div class="flex gap-4 items-center">
+        <div><img src="./assets/headphones.png" alt="" /></div>
+        <div>
+          <h3 class="text-[#1A1A1A] text-[16px] mb-2">Customer Support 24/7</h3>
+          <p class="text-[#999999] text-[14px]">Instant access to Support</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-[60px]">
+      <div class="mb-8 flex justify-between items-center">
+        <h2 class="text-[#1A1A1A] md:text-[32px]">Popular Categories</h2>
+        <h4
+          class="text-[#00B207] cursor-pointer hover:text-green-800 text-[10px] md:text-[16px]"
+        >
+          View All →
+        </h4>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-6 gap-6">
+        <div
+          class="py-4 flex flex-col items-center border border-[#E6E6E6] rounded-xl"
+        >
+          <div><img src="./assets/freshfruit.png" alt="" /></div>
+          <h4 class="text-[#000000] text-[18px] mt-4 text-center">
+            Fresh Fruit
+          </h4>
+        </div>
+        <div
+          class="py-4 flex flex-col items-center border border-[#E6E6E6] rounded-xl"
+        >
+          <div><img src="./assets/freshfruit.png" alt="" /></div>
+          <h4 class="text-[#000000] text-[18px] mt-4 text-center">
+            Fresh Fruit
+          </h4>
+        </div>
+        <div
+          class="py-4 flex flex-col items-center border border-[#E6E6E6] rounded-xl"
+        >
+          <div><img src="./assets/freshfruit.png" alt="" /></div>
+          <h4 class="text-[#000000] text-[18px] mt-4 text-center">
+            Fresh Fruit
+          </h4>
+        </div>
+        <div
+          class="py-4 flex flex-col items-center border border-[#E6E6E6] rounded-xl"
+        >
+          <div><img src="./assets/freshfruit.png" alt="" /></div>
+          <h4 class="text-[#000000] text-[18px] mt-4 text-center">
+            Fresh Fruit
+          </h4>
+        </div>
+        <div
+          class="py-4 flex flex-col items-center border border-[#E6E6E6] rounded-xl"
+        >
+          <div><img src="./assets/freshfruit.png" alt="" /></div>
+          <h4 class="text-[#000000] text-[18px] mt-4 text-center">
+            Fresh Fruit
+          </h4>
+        </div>
+        <div
+          class="py-4 flex flex-col items-center border border-[#E6E6E6] rounded-xl"
+        >
+          <div><img src="./assets/freshfruit.png" alt="" /></div>
+          <h4 class="text-[#000000] text-[18px] mt-4 text-center">
+            Fresh Fruit
+          </h4>
+        </div>
+        <div
+          class="py-4 flex flex-col items-center border border-[#E6E6E6] rounded-xl"
+        >
+          <div><img src="./assets/cooking.png" alt="" /></div>
+          <h4 class="text-[#000000] text-[18px] mt-4 text-center">Cooking</h4>
+        </div>
+        <div
+          class="py-4 flex flex-col items-center border border-[#E6E6E6] rounded-xl"
+        >
+          <div><img src="./assets/cooking.png" alt="" /></div>
+          <h4 class="text-[#000000] text-[18px] mt-4 text-center">Cooking</h4>
+        </div>
+        <div
+          class="py-4 flex flex-col items-center border border-[#E6E6E6] rounded-xl"
+        >
+          <div><img src="./assets/cooking.png" alt="" /></div>
+          <h4 class="text-[#000000] text-[18px] mt-4 text-center">Cooking</h4>
+        </div>
+        <div
+          class="py-4 flex flex-col items-center border border-[#E6E6E6] rounded-xl"
+        >
+          <div><img src="./assets/cooking.png" alt="" /></div>
+          <h4 class="text-[#000000] text-[18px] mt-4 text-center">Cooking</h4>
+        </div>
+        <div
+          class="py-4 flex flex-col items-center border border-[#E6E6E6] rounded-xl"
+        >
+          <div><img src="./assets/cooking.png" alt="" /></div>
+          <h4 class="text-[#000000] text-[18px] mt-4 text-center">Cooking</h4>
+        </div>
+        <div
+          class="py-4 flex flex-col items-center border border-[#E6E6E6] rounded-xl"
+        >
+          <div><img src="./assets/cooking.png" alt="" /></div>
+          <h4 class="text-[#000000] text-[18px] mt-4 text-center">Cooking</h4>
+        </div>
+      </div>
+
+      <div></div>
+    </section>
+
+    <section>
+      <div class="mb-8 flex justify-between items-center">
+        <h2 class="text-[#1A1A1A] md:text-[32px]">Popular Products</h2>
+        <h4
+          class="text-[#00B207] cursor-pointer hover:text-green-800 text-[10px] md:text-[16px]"
+        >
+          View All →
+        </h4>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-5">
+        <div class="flex flex-col border border-[#E6E6E6] p-3">
+          <div><img src="./assets/mango.png" alt="" /></div>
+          <div class="flex justify-between items-center">
+            <div>
+              <p class="text-[#4D4D4D] mb-1 text-[14px]">Corn</p>
+              <h4 class="text-[#1A1A1A] mb-[6px] text-[16px]">$20.00</h4>
+              <div><img src="./assets/Rating.png" alt="" /></div>
+            </div>
+            <div class="bg-[#F2F2F2] hover:bg-[#00B207] p-3 rounded-full">
+              <img src="./assets/Bag.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col border border-[#E6E6E6] p-3">
+          <div><img src="./assets/mango.png" alt="" /></div>
+          <div class="flex justify-between items-center">
+            <div>
+              <p class="text-[#4D4D4D] mb-1 text-[14px]">Corn</p>
+              <h4 class="text-[#1A1A1A] mb-[6px] text-[16px]">$20.00</h4>
+              <div><img src="./assets/Rating.png" alt="" /></div>
+            </div>
+            <div class="bg-[#F2F2F2] hover:bg-[#00B207] p-3 rounded-full">
+              <img src="./assets/Bag.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col border border-[#E6E6E6] p-3">
+          <div><img src="./assets/mango.png" alt="" /></div>
+          <div class="flex justify-between items-center">
+            <div>
+              <p class="text-[#4D4D4D] mb-1 text-[14px]">Corn</p>
+              <h4 class="text-[#1A1A1A] mb-[6px] text-[16px]">$20.00</h4>
+              <div><img src="./assets/Rating.png" alt="" /></div>
+            </div>
+            <div class="bg-[#F2F2F2] hover:bg-[#00B207] p-3 rounded-full">
+              <img src="./assets/Bag.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col border border-[#E6E6E6] p-3">
+          <div><img src="./assets/mango.png" alt="" /></div>
+          <div class="flex justify-between items-center">
+            <div>
+              <p class="text-[#4D4D4D] mb-1 text-[14px]">Corn</p>
+              <h4 class="text-[#1A1A1A] mb-[6px] text-[16px]">$20.00</h4>
+              <div><img src="./assets/Rating.png" alt="" /></div>
+            </div>
+            <div class="bg-[#F2F2F2] hover:bg-[#00B207] p-3 rounded-full">
+              <img src="./assets/Bag.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col border border-[#E6E6E6] p-3">
+          <div><img src="./assets/corn.png" alt="" /></div>
+          <div class="flex justify-between items-center">
+            <div>
+              <p class="text-[#4D4D4D] mb-1 text-[14px]">Corn</p>
+              <h4 class="text-[#1A1A1A] mb-[6px] text-[16px]">$20.00</h4>
+              <div><img src="./assets/Rating.png" alt="" /></div>
+            </div>
+            <div class="bg-[#F2F2F2] hover:bg-[#00B207] p-3 rounded-full">
+              <img src="./assets/Bag.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col border border-[#E6E6E6] p-3">
+          <div><img src="./assets/corn.png" alt="" /></div>
+          <div class="flex justify-between items-center">
+            <div>
+              <p class="text-[#4D4D4D] mb-1 text-[14px]">Corn</p>
+              <h4 class="text-[#1A1A1A] mb-[6px] text-[16px]">$20.00</h4>
+              <div><img src="./assets/Rating.png" alt="" /></div>
+            </div>
+            <div class="bg-[#F2F2F2] hover:bg-[#00B207] p-3 rounded-full">
+              <img src="./assets/Bag.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col border border-[#E6E6E6] p-3">
+          <div><img src="./assets/corn.png" alt="" /></div>
+          <div class="flex justify-between items-center">
+            <div>
+              <p class="text-[#4D4D4D] mb-1 text-[14px]">Corn</p>
+              <h4 class="text-[#1A1A1A] mb-[6px] text-[16px]">$20.00</h4>
+              <div><img src="./assets/Rating.png" alt="" /></div>
+            </div>
+            <div class="bg-[#F2F2F2] hover:bg-[#00B207] p-3 rounded-full">
+              <img src="./assets/Bag.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col border border-[#E6E6E6] p-3">
+          <div><img src="./assets/corn.png" alt="" /></div>
+          <div class="flex justify-between items-center">
+            <div>
+              <p class="text-[#4D4D4D] mb-1 text-[14px]">Corn</p>
+              <h4 class="text-[#1A1A1A] mb-[6px] text-[16px]">$20.00</h4>
+              <div><img src="./assets/Rating.png" alt="" /></div>
+            </div>
+            <div class="bg-[#F2F2F2] hover:bg-[#00B207] p-3 rounded-full">
+              <img src="./assets/Bag.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col border border-[#E6E6E6] p-3">
+          <div><img src="./assets/corn.png" alt="" /></div>
+          <div class="flex justify-between items-center">
+            <div>
+              <p class="text-[#4D4D4D] mb-1 text-[14px]">Corn</p>
+              <h4 class="text-[#1A1A1A] mb-[6px] text-[16px]">$20.00</h4>
+              <div><img src="./assets/Rating.png" alt="" /></div>
+            </div>
+            <div class="bg-[#F2F2F2] hover:bg-[#00B207] p-3 rounded-full">
+              <img src="./assets/Bag.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col border border-[#E6E6E6] p-3">
+          <div><img src="./assets/corn.png" alt="" /></div>
+          <div class="flex justify-between items-center">
+            <div>
+              <p class="text-[#4D4D4D] mb-1 text-[14px]">Corn</p>
+              <h4 class="text-[#1A1A1A] mb-[6px] text-[16px]">$20.00</h4>
+              <div><img src="./assets/Rating.png" alt="" /></div>
+            </div>
+            <div class="bg-[#F2F2F2] hover:bg-[#00B207] p-3 rounded-full">
+              <img src="./assets/Bag.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-5 mt-14 grid grid-cols-1 md:grid-cols-3">
+      <div
+        class="bg-[url('./assets/sales.png')] pb-[294px] max-w-[424px] bg-no-repeat p-9 flex flex-col items-center"
+      >
+        <h4 class="text-[#FFFFFF] mb-4 text-[14px]">Best Deals</h4>
+        <h2 class="text-[#FFFFFF] mb-2 font-semibold text-[40px]">
+          Sale of the Month
+        </h2>
+        <div class="flex gap-5 mb-6">
+          <h3 class="flex flex-col text-[#FFFFFF] text-[24px]">
+            00 <span class="text-[#FFFFFFCC] text-[12px]">DAYS</span>
+          </h3>
+          <h3 class="text-[#FFFFFFCC] text-[24px]">:</h3>
+          <h3 class="flex flex-col text-[#FFFFFF] text-[24px]">
+            02<span class="text-[#FFFFFFCC] text-[12px]">HOURS</span>
+          </h3>
+          <h3 class="text-[#FFFFFFCC] text-[24px]">:</h3>
+          <h3 class="flex flex-col text-[#FFFFFF] text-[24px]">
+            18 <span class="text-[#FFFFFFCC] text-[12px]">MINS</span>
+          </h3>
+          <h3 class="text-[#FFFFFFCC] text-[24px]">:</h3>
+          <h3 class="flex flex-col text-[#FFFFFF] text-[24px]">
+            46 <span class="text-[#FFFFFFCC] text-[12px]">SECS</span>
+          </h3>
+        </div>
+        <div>
+          <button
+            class="text-[#00B207] hover:bg-orange-200 py-4 px-10 rounded-full text-[16px] bg-white"
+          >
+            Shop now →
+          </button>
+        </div>
+      </div>
+      <div
+        class="bg-[url('./assets/meat.png')] max-w-[424px] p-9 bg-no-repeat pb-[294px] flex flex-col items-center"
+      >
+        <h4 class="text-[#FFFFFF] mb-4 text-[14px]">85% Fat Free</h4>
+        <h2 class="text-[#FFFFFF] mb-2 font-semibold text-[40px]">
+          Low-Fat Meat
+        </h2>
+        <h3 class="text-[#FFFFFF] text-[18px] mb-7">
+          Start at <span class="text-[#FF8A00] font-medium">$79.99</span>
+        </h3>
+        <div>
+          <button
+            class="text-[#00B207] hover:bg-orange-200 py-4 px-10 rounded-full text-[16px] bg-white"
+          >
+            Shop now →
+          </button>
+        </div>
+      </div>
+      <div
+        class="bg-[url('./assets/freshfruitbg.png')] max-w-[424px] p-9 bg-no-repeat pb-[294px] flex flex-col items-center"
+      >
+        <h4 class="text-[#1A1A1A] mb-4 text-[14px]">Summer Sale</h4>
+        <h2 class="text-[#1A1A1A] mb-2 font-semibold text-[40px]">
+          100% Fresh Fruit
+        </h2>
+        <h3 class="text-[#1A1A1A] text-[18px] mb-7">
+          Up to
+          <span
+            class="text-[#FCC900] rounded bg-[#1A1A1A] py-2 px-3 font-medium"
+            >64% OFF</span
+          >
+        </h3>
+        <div>
+          <button
+            class="text-[#00B207] hover:bg-orange-200 py-4 px-10 rounded-full text-[16px] bg-white"
+          >
+            Shop now →
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-6">
+      <div class="mb-8 flex justify-between items-center">
+        <h2 class="text-[#1A1A1A] md:text-[32px]">Hot Deals</h2>
+        <h4
+          class="text-[#00B207] cursor-pointer hover:text-green-800 text-[10px] md:text-[16px]"
+        >
+          View All →
+        </h4>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start px-4 py-8">
+        <div class="p-6 border border-[#2C742F] w-full">
+          <div class="flex gap-2 mb-4">
+            <h4 class="text-white bg-[#EA4B48] py-1 px-2 rounded text-[14px]">
+              Sale 50%
+            </h4>
+            <h4 class="text-white bg-[#2388FF] py-1 px-2 rounded text-[14px]">
+              Best Sale
+            </h4>
+          </div>
+          <div class="mb-4"><img src="./assets/apple.jpg" alt="Apple" /></div>
+          <div class="flex gap-2 mb-6 items-center">
+            <img src="./assets/like.png" alt="Like" />
+            <button
+              class="bg-[#00B207] flex gap-4 hover:bg-green-600 items-center justify-center rounded-full w-full max-w-[370px] h-[45px] text-white text-[14px]"
+            >
+              Add to Cart <img src="./assets/addtocart.png" alt="Cart" />
+            </button>
+            <img src="./assets/view.png" alt="View" />
+          </div>
+          <h4 class="text-center text-[#00B207] text-[18px] mb-2">
+            Chinese cabbage
+          </h4>
+          <h3 class="text-center mb-2 text-[#1A1A1A] text-[24px]">
+            $12.00 <span class="text-[#999999] line-through">$24.00</span>
+          </h3>
+          <div class="mb-5 flex justify-center">
+            <img src="./assets/5star524.png" alt="Rating" />
+          </div>
+          <h4 class="text-[#999999] text-center mb-2 text-[18px]">
+            Hurry up! Offer ends In:
+          </h4>
+          <div class="flex justify-center gap-5 mb-6">
+            <h3 class="flex flex-col text-[#1A1A1A] text-[24px]">
+              00 <span class="text-[#999999] text-[12px]">DAYS</span>
+            </h3>
+            <h3 class="text-[#1A1A1A] text-[24px]">:</h3>
+            <h3 class="flex flex-col text-[#1A1A1A] text-[24px]">
+              02 <span class="text-[#999999] text-[12px]">HOURS</span>
+            </h3>
+            <h3 class="text-[#1A1A1A] text-[24px]">:</h3>
+            <h3 class="flex flex-col text-[#1A1A1A] text-[24px]">
+              18 <span class="text-[#999999] text-[12px]">MINS</span>
+            </h3>
+            <h3 class="text-[#1A1A1A] text-[24px]">:</h3>
+            <h3 class="flex flex-col text-[#1A1A1A] text-[24px]">
+              46 <span class="text-[#999999] text-[12px]">SECS</span>
+            </h3>
+          </div>
+        </div>
+
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full"
+        >
+          <div class="flex flex-col border border-[#E6E6E6] p-3">
+            <img src="./assets/mango.png" alt="Mango" />
+            <div class="flex justify-between items-center mt-10">
+              <div>
+                <p class="text-[#4D4D4D] mb-1 text-[14px]">Corn</p>
+                <h4 class="text-[#1A1A1A] mb-[6px] text-[16px]">$20.00</h4>
+                <img class="mb-10" src="./assets/Rating.png" alt="Rating" />
+              </div>
+              <div class="bg-[#F2F2F2] hover:bg-[#00B207] p-3 rounded-full">
+                <img src="./assets/Bag.png" alt="Bag" />
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col border border-[#E6E6E6] p-3">
+            <img src="./assets/mango.png" alt="Mango" />
+            <div class="flex justify-between items-center mt-10">
+              <div>
+                <p class="text-[#4D4D4D] mb-1 text-[14px]">Tomato</p>
+                <h4 class="text-[#1A1A1A] mb-[6px] text-[16px]">$18.00</h4>
+                <img class="mb-10" src="./assets/Rating.png" alt="Rating" />
+              </div>
+              <div class="bg-[#F2F2F2] hover:bg-[#00B207] p-3 rounded-full">
+                <img src="./assets/Bag.png" alt="Bag" />
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col border border-[#E6E6E6] p-3">
+            <img src="./assets/mango.png" alt="Mango" />
+            <div class="flex justify-between items-center mt-10">
+              <div>
+                <p class="text-[#4D4D4D] mb-1 text-[14px]">Carrot</p>
+                <h4 class="text-[#1A1A1A] mb-[6px] text-[16px]">$15.00</h4>
+                <img class="mb-10" src="./assets/Rating.png" alt="Rating" />
+              </div>
+              <div class="bg-[#F2F2F2] hover:bg-[#00B207] p-3 rounded-full">
+                <img src="./assets/Bag.png" alt="Bag" />
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col border border-[#E6E6E6] p-3">
+            <img src="./assets/mango.png" alt="Mango" />
+            <div class="flex justify-between items-center mt-10">
+              <div>
+                <p class="text-[#4D4D4D] mb-1 text-[14px]">Carrot</p>
+                <h4 class="text-[#1A1A1A] mb-[6px] text-[16px]">$15.00</h4>
+                <img class="mb-10" src="./assets/Rating.png" alt="Rating" />
+              </div>
+              <div class="bg-[#F2F2F2] hover:bg-[#00B207] p-3 rounded-full">
+                <img src="./assets/Bag.png" alt="Bag" />
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col border border-[#E6E6E6] p-3">
+            <img src="./assets/mango.png" alt="Mango" />
+            <div class="flex justify-between items-center mt-10">
+              <div>
+                <p class="text-[#4D4D4D] mb-1 text-[14px]">Carrot</p>
+                <h4 class="text-[#1A1A1A] mb-[6px] text-[16px]">$15.00</h4>
+                <img class="mb-10" src="./assets/Rating.png" alt="Rating" />
+              </div>
+              <div class="bg-[#F2F2F2] hover:bg-[#00B207] p-3 rounded-full">
+                <img src="./assets/Bag.png" alt="Bag" />
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col border border-[#E6E6E6] p-3">
+            <img src="./assets/mango.png" alt="Mango" />
+            <div class="flex justify-between items-center mt-10">
+              <div>
+                <p class="text-[#4D4D4D] mb-1 text-[14px]">Carrot</p>
+                <h4 class="text-[#1A1A1A] mb-[6px] text-[16px]">$15.00</h4>
+                <img class="mb-10" src="./assets/Rating.png" alt="Rating" />
+              </div>
+              <div class="bg-[#F2F2F2] hover:bg-[#00B207] p-3 rounded-full">
+                <img src="./assets/Bag.png" alt="Bag" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-5"></div>
+    </section>
+  </body>
+</html>
